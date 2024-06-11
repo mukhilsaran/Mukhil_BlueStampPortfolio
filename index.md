@@ -88,4 +88,8 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
+# Starter Project
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uZ-PfwZgxXo?si=0OI4P5rAvbiRFp-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 To watch the BSE tutorial on how to create a portfolio, click here.
