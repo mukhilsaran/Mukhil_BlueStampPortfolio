@@ -58,7 +58,7 @@ For your first milestone, describe what your project is and how you plan to buil
 
   For my starter project, I went with the handheld arcade. I chose this project because I thought it was fun to use and it was also portable. This handheld arcade uses 2 8x8 LED Matrices and an LCD screen to display the game and scores respectively. It has foour arrow buttons to navigate and play games, and two more to slect and cancel. It is powered by 3 triple A batteries that make it capable of being used anywhere. Its features include A selection of five different games, adjustable brightness, and adjustable volume.
 
-<---! # Schematics 
+<!--- # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
