@@ -58,7 +58,7 @@ For your first milestone, describe what your project is and how you plan to buil
 
   For my starter project, I went with the handheld arcade. I chose this project because I thought it was fun to use and it was also portable. This handheld arcade uses 2 8x8 LED Matrices and an LCD screen to display the game and scores respectively. It has foour arrow buttons to navigate and play games, and two more to slect and cancel. It is powered by 3 triple A batteries that make it capable of being used anywhere. Its features include A selection of five different games, adjustable brightness, and adjustable volume.
 
-# Schematics 
+<--! # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
@@ -91,6 +91,6 @@ Don't forget to place the link of where to buy each component inside the quotati
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+- [Example 3](https://arneshkumar.github.io/arneshbluestamp/) -->
 
 To watch the BSE tutorial on how to create a portfolio, click here.
