@@ -43,7 +43,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 # First Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rvm1UATFPRk?si=Q7zxILlYu04tUMM_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my main project, I chose the Wall-E robot. I chose it because it gives my a well-rounded experience on the mechanical, electrical, and the software side. The Wall-E robot has two 8x8 LED matrices for eyes, an ultrasonic sensor, a LCD screen, and 4 servo motors (two micro, and two regular). For my first milestone, I have wired up all the eletrical components and tested them by making the servos move, making the LEDs light up, the LCD to display a message saying "Hello", and the ultrasonicc sensor by making it print the output on <whatever it's called>. After testing all of the components, I will be writing the final code for the project, assembling the body of the robot, and securing the electrical components into the designated compartments of the 3D printed body.
 
