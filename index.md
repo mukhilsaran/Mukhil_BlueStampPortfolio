@@ -39,7 +39,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QmMgxGSDIE8?si=Wymk5kahPlRH4V7R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For my main project, I chose the Wall-E robot. I chose it because it gives my a well-rounded experience on the mechanical, electrical, and the software side. The Wall-E robot has two 8x8 LED matrices for eyes, an ultrasonic sensor, a LCD screen, and 4 servo motors (two micro, and two regular). For my first milestone, I have wired up all the eletrical components and tested them by making the servos move, making the LEDs light up, the LCD to display a message saying "Hello", and the ultrasonicc sensor by making it print the output on <whatever it's called>. After testing all of the components, I will be writing the final code for the project, assembling the body of the robot, and securing the electrical components into the designated compartments of the 3D printed body.
+For my main project, I chose the Wall-E robot. I chose it because it gives my a well-rounded experience on the mechanical, electrical, and the software side. The Wall-E robot has two 8x8 LED matrices for eyes, an ultrasonic sensor, a LCD screen, and 4 servo motors (two micro, and two regular). For my first milestone, I have wired up all the eletrical components and tested them by making the servos move, making the LEDs light up, the LCD to display a message saying "Hello", and the ultrasonicc sensor by making it print the output on the serial monitor. After testing all of the components, I will be writing the final code for the project, assembling the body of the robot, and securing the electrical components into the designated compartments of the 3D printed body. A few difficulties when working on my project werere with my LED matrices. I was confused as to how I was supposed make patterns, and writing the test code for the rest of the components was also hard.
 
 
 # Starter Project
@@ -47,6 +47,11 @@ For my main project, I chose the Wall-E robot. I chose it because it gives my a 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uZ-PfwZgxXo?si=0OI4P5rAvbiRFp-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   For my starter project, I went with the handheld arcade. I chose this project because I thought it was fun to use and it was also portable. This handheld arcade uses 2 8x8 LED Matrices and an LCD screen to display the game and scores respectively. It has foour arrow buttons to navigate and play games, and two more to slect and cancel. It is powered by 3 triple A batteries that make it capable of being used anywhere. Its features include A selection of five different games, adjustable brightness, and adjustable volume.
+
+# Starter Bill of Materials  
+  | **Item Name** | **School** | **Area of Interest** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Mukhil S | Monta Vista Highschool | Mechanical Engineering | [<a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"](https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1)> Link
 
 <!--- # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
@@ -83,4 +88,4 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/) -->
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+<!---To watch the BSE tutorial on how to create a portfolio, click here.
