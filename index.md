@@ -7,7 +7,7 @@ An emotionally responsive robot that uses artificial facial features like eyebro
 
 <!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](logo.svg)
+![Headstone Image](Screenshot 2024-06-13 215404.png)
   
 # Final Milestone
 
@@ -53,8 +53,10 @@ For my main project, I chose the Wall-E robot. I chose it because it gives my a 
 |:--:|:--:|:--:|:--:|
 | Vogurtime Retro Arcade Kit | Ummmm | $18.49 |https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1
 
-<!--- # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+# Schematics 
+![Headstone Image](Screenshot 2024-06-13 215404.png)
+
+<!--- Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
