@@ -51,7 +51,7 @@ For my main project, I chose the Wall-E robot. I chose it because it gives my a 
 # Starter Bill of Materials  
   | **Item Name** | **School** | **Area of Interest** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Mukhil S | Monta Vista Highschool | Mechanical Engineering | [<a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"](https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1)> Link
+| Mukhil S | Monta Vista Highschool | Mechanical Engineering |(https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1)> Link
 
 <!--- # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
