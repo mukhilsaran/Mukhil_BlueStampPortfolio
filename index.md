@@ -53,7 +53,7 @@ For my main project, I chose the Wall-E robot. I chose it because it gives my a 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Vogurtime Retro Arcade Kit | Ummmm | $18.49 | [Link](https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1)
-
+</a> |
 
 # Schematics 
 ![MainProjectSchematics](Screenshot 2024-06-13 215404.png)
