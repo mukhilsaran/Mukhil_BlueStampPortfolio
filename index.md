@@ -19,7 +19,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+- What you hope to learn in the future after everything you've learned at BSE-->
 
 
 
@@ -27,13 +27,15 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cuj8OAAFLn4?si=XxH9Lxcir32arqjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
+For my second milestone, I have coded the 8x8 matrices to work with the ultrasonic sensor so that the "eyes" display different patterns for "emotions" when objects are placed in different distances from the sensor. The eyes start at a neutral position after a loading animation appears on the matrices and a welcome message on the LCD screen. When an object is placed at a distance {whatever it is}, the led's lights arrange themselves to resemble happy eyes. But as the object gets closer, the eyes change from happy to sad to angry and finally to surprised. This when paired with head movements and eyebrow movements, will allow the robot to portray human emotions accuratley. As rewarding as this milestone was, there were a few challenges when coding the matrices. It was particularly hard to make the expressions on the matrices and orient them properly as I had to map out each LED by using a byte of 1s and 0s tell which LED should be on and off. For my final milestone, I will be coding the srvos to incorporate head movements and eyebrow movements, and I will be assembling the hardware by placing my components into the enclosure and mount my servos to the 3D Printed Body. 
+
+<!---For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
 - Technical details of what you've accomplished and how they contribute to the final goal
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone--> 
+- What needs to be completed before your final milestone-->
 
 # First Milestone
 
@@ -52,31 +54,421 @@ For my main project, I chose the Wall-E robot. I chose it because it gives my a 
   
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Vogurtime Retro Arcade Kit | Ummmm | $18.49 | [Link](https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1)
+| Vogurtime Retro Arcade Kit | Consists of all required domponents to make the arcade | $18.49 | [Link](https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1)
 </a> |
 
 # Schematics 
 ![MainProjectSchematics](Screenshot 2024-06-13 215404.png)
 
-<!--- Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+<!--- Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. -->
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```c++
+```
+#include <Servo.h>
+#include <LiquidCrystal_I2C.h>
+#include <LedControl.h>
+#include <Wire.h>
+#include <EasyUltrasonic.h>
+
+// Pins for the LED matrices
+const int DIN_1 = 13;
+const int CLK_1 = 11;
+const int CS_1 = 12;
+const int DIN_2 = 10;
+const int CLK_2 = 8;
+const int CS_2 = 9;
+
+// Number of LED matrices
+//const int NUM_MATRICES = 2;
+
+// Create an instance of the LedControl library
+LedControl ld = LedControl (DIN_1, CLK_1, CS_1);
+LedControl lc = LedControl(DIN_2, CLK_2, CS_2);
+
+byte happy_bmp[8] =
+{ 
+B00000000,
+B00000000,
+B01111110,
+B01011010,
+B01011010,
+B00100100,
+B00011000,
+B00000000 };
+
+byte loading1[8] =
+{
+B11111111,
+B11111111,
+B11110000,
+B11110000,
+B11110000,
+B11110000,
+B11111111,
+B11111111
+}; 
+
+byte loading2[8] =
+{
+B11111111,
+B11111111,
+B00001111,
+B00001111,
+B00001111,
+B00001111,
+B11111111,
+B11111111
+};
+
+byte neutral_bmp[8] =
+{ B00000000,
+B00111100,
+B01000010,
+B01011010,
+B01011010,
+B01000010,
+B00111100,
+B00000000 };
+
+
+byte angryR_bmp[8] =
+{
+B00000000,
+B00111100,
+B01000011,
+B01011010,
+B01011100,
+B01001000,
+B00110000,
+B00100000 };
+
+byte angryL_bmp[8] =
+{ B00000000,
+B00111100,
+B11000010,
+B01011010,
+B00111010,
+B00010010,
+B00001100,
+B00000100 };
+
+byte surprised_bmp[8] =
+{ B01111110,
+B10000001,
+B10000001,
+B10011001,
+B10011001,
+B10000001,
+B10000001,
+B01111110 };
+
+
+byte sadR_bmp[8] =
+{B00000000,
+B00110000,
+B01001000,
+B01011100,
+B01011010,
+B01000010,
+B00111100,
+B00000000
+};
+//{ B00000000,
+//B00111100,
+//B01000010,
+//B01011010,
+//B00111010,
+//B00010010,
+//B00001100,
+//B00000000 };
+
+byte sadL_bmp[8] =
+{ B00000000,
+B00001100,
+B00010010,
+B00111010,
+B01011010,
+B01000010,
+B00111100,
+B00000000 };
+
+byte love_bmp[8] =
+{B00011000,
+B00100100,
+B01000010,
+B10000001,
+B10000001,
+B10011001,
+B10011001,
+B01100110 };
+
+byte blink_bmp[8] =
+{ 
+B00000000,
+B00111100,
+B01000010,
+B00000000,
+B00000000,
+B00000000,
+B00000000,
+B00000000,
+ };
+
+byte no_bmp[8] =
+{B11000011,
+B11100111,
+B01111110,
+B00111100,
+B00111100,
+B01111110,
+B11100111,
+B11000011 };
+
+byte yes_bmp[8] =
+{B00100000,
+B01110000,
+B11011000,
+B10001100,
+B00000110,
+B00000011,
+B00000001,
+B00000000,
+};
+
+Servo panservo;  // create servo object to control a servo
+Servo tiltservo; 
+Servo leftbrow;
+Servo rightbrow;
+// twelve servo objects can be created on most boards
+
+int pos = 0;    // variable to store the servo position
+
+LiquidCrystal_I2C lcd(0x27,  16, 2);
+
+const int trigPin = 5;  
+const int echoPin = 4;
+EasyUltrasonic ultrasonic;
+
+float duration, distance;
+
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
-  Serial.println("Hello World!");
+  //attach servos
+  tiltservo.attach(3);
+  panservo.attach(2);
+  leftbrow.attach(1);
+  rightbrow.attach(0);
+    // Initialize each matrix
+
+    lc.shutdown(0, false);       // Wake up the display
+    lc.setIntensity(0, 8);       // Set brightness level (0 is min, 15 is max)
+    lc.clearDisplay(0);          // Clear the display register
+  
+    ld.shutdown(0, false);       // Wake up the display
+    ld.setIntensity(0, 8);       // Set brightness level (0 is min, 15 is max)
+    ld.clearDisplay(0);          // Clear the display register
+
+  //initialize lcd screen
+  lcd.init();
+  // turn on the backlight
+  lcd.backlight();
+  
+
+  //welcome message
+  delay(500);
+
+
+  lcd.setCursor(0, 0);
+  lcd.print ("Hello");
+   for(int i=0; i < 8; i++){
+      lc.setColumn(0, i, loading1[i]);
+   }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading1[i]);
+   }
+   delay(500);
+  for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading2[i]);
+  }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading2[i]);
+  }
+  delay(500);
+ for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading1[i]);
+ }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading1[i]);
+ }
+ delay(500);
+  for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading2[i]);
+  }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading2[i]);
+  }
+  delay(500);
+  lcd.clear();
+  for(int i=0; i < 8; i++){
+      lc.setColumn(0, i, loading1[i]);
+   }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading1[i]);
+   }
+   delay(500);
+  for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading2[i]);
+  }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading2[i]);
+  }
+  delay(500);
+ for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading1[i]);
+ }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading1[i]);
+ }
+ delay(500);
+  for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading2[i]);
+  }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading2[i]);
+  }
+delay (500);
+  lcd.print ("I'm Brobot");
+  for(int i=0; i < 8; i++){
+      lc.setColumn(0, i, loading1[i]);
+   }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading1[i]);
+   }
+   delay(500);
+  for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading2[i]);
+  }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading2[i]);
+  }
+  delay(500);
+ for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading1[i]);
+ }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading1[i]);
+ }
+ delay(500);
+  for(int i = 0; i < 8; i++){
+      lc.setColumn(0, i, loading2[i]);
+  }
+  for(int i=0; i < 8; i++){
+      ld.setColumn(0, i, loading2[i]);
+  }
+  delay(500);
+  lcd.clear();
+
+
+ ultrasonic.attach(5,4);
+
+
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+   int i = 0;
+    // draws pattern on left eye matrix
+    
+    int j = 0;
+    // draws pattern on right eye matrix
+   
 
-}
+  float distanceIN = ultrasonic.getDistanceIN();
+
+  Serial.println (distanceIN);
+  Serial.println ("neutral_bmp");
+  
+  
+  if(distanceIN <= 2) {
+    Serial.println("surprised_bmp");
+    for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // insteps of 1 degree
+    panservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(3);                       // waits 15 ms for the servo to reach the position
+    }
+    for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+      panservo.write(pos);              // tell servo to go to position in variable 'pos'
+      delay(3);                       // waits 15 ms for the servo to reach the position
+    }
+    int i = 0;
+    // draws pattern on left eye matrix
+    for(i = 0; i < 8; i++){
+      lc.setColumn(0, i, surprised_bmp[i]);
+    }
+    int j = 0;
+    // draws pattern on right eye matrix
+    for(j = 0; j < 8; j++){
+      ld.setColumn(0, j, surprised_bmp[j]);
+    }
+    
+  }
+
+  else if (distanceIN <= 5 && distanceIN > 2){
+     Serial.println ("angry_bmp");
+    for (i = 0; i < 8; i++){
+       lc.setColumn(0, i, angryR_bmp[i]
+       );
+    }
+    for (j = 0; j < 8; j++){
+      ld.setColumn(0, j, angryL_bmp[j]);
+    }
+    
+  }
+
+  else if (distanceIN <= 10 && distanceIN > 5){
+    Serial.println ("SadR_bmp");
+    Serial.println ("SadL_bmp");
+
+    for (i = 0; i < 8; i++){
+       lc.setColumn(0, i, sadR_bmp[i]
+       );
+    }
+    for (j = 0; j < 8; j++){
+      ld.setColumn(0, j, sadL_bmp[j]);
+    }
+  }
+
+  else if (distanceIN <= 15 && distanceIN > 10){
+   
+    for (i = 0; i < 8; i++){
+       lc.setColumn(0, i, happy_bmp[i]
+       );
+    }
+    for (j = 0; j < 8; j++){
+      ld.setColumn(0, j, happy_bmp[j]);
+    }
+  }
+ // else if ( )
+
+  
+
+  else {
+     Serial.println ("neutral_bmp");
+    for(i = 0; i < 8; i=i+1){     
+      lc.setColumn(0, i, neutral_bmp[i]); 
+    }
+    for(j = 0; j < 8; j++){
+       ld.setColumn(0, j, neutral_bmp[j]);
+    }
+  }  
+
+  }
+
 ```
 
-# Bill of Materials
+<!--- # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
