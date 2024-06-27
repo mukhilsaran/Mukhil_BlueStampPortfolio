@@ -27,8 +27,6 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cuj8OAAFLn4?si=XxH9Lxcir32arqjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my second milestone, I have coded the 8x8 matrices to work with the ultrasonic sensor so that the "eyes" display different patterns for "emotions" when objects are placed in different distances from the sensor. The eyes start at a neutral position after a loading animation appears on the matrices and a welcome message on the LCD screen. When an object is placed at a distance {whatever it is}, the led's lights arrange themselves to resemble happy eyes. But as the object gets closer, the eyes change from happy to sad to angry and finally to surprised. This when paired with head movements and eyebrow movements, will allow the robot to portray human emotions accuratley. As rewarding as this milestone was, there were a few challenges when coding the matrices. It was particularly hard to make the expressions on the matrices and orient them properly as I had to map out each LED by using a byte of 1s and 0s tell which LED should be on and off. For my final milestone, I will be coding the srvos to incorporate head movements and eyebrow movements, and I will be assembling the hardware by placing my components into the enclosure and mount my servos to the 3D Printed Body. 
@@ -53,8 +51,7 @@ For my main project, I chose the Wall-E robot. I chose it because it gives my a 
 
 <!--- Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. -->
 
-# Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+# Code 
 
 ```
 #include <Servo.h>
@@ -475,7 +472,6 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/) -->
 
-<!---To watch the BSE tutorial on how to create a portfolio, click here.-->
 
 # Starter Project
 
