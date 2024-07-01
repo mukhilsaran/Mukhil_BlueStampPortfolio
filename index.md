@@ -1,7 +1,7 @@
 # Wall-E Robot
 An emotionally responsive robot that uses artificial facial features like eyebrows and digital "eyes" to show a suite of emotions like happiness, sadness, and anger.
 
-![Headshot](Mukhil_S.png)
+![Headshot](Mukhil.JPG)
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
