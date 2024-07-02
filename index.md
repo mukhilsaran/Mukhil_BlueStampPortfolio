@@ -462,15 +462,15 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Arduino UNO R3 | Microcontroller that receives the code | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| 8x8 LED Matrix | Eyes of the robot to show emotions | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| LCD I2C Display | Display emotional state of the robot | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| HC-SR04 Ultrasonic Sensor | find the distance from an object to change and trigger emotions | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Mini Breadboard | used to mount button (MODIFICATION) | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Jumper Wires | Connecting all electrical components | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Push Button | To trigger 8-ball (MODIFICATION) | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| 9g Micro Servos | Eyebrows | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| MG995 Servos | Neck tilt and pan | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Arduino UNO R3 | Microcontroller that receives the code | $27.60 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| 8x8 LED Matrix | Eyes of the robot to show emotions | $8.39 | <a href="https://www.amazon.com/gp/product/B07W6KZR5D/ref=ox_sc_act_title_8?smid=A30QSGOJR8LMXA&psc=1"> Link </a> |
+| LCD I2C Display | Display emotional state of the robot | $9.99 | <a href="https://www.amazon.com/gp/product/B019K5X53O/ref=ox_sc_act_title_7?smid=ADHH624DX2Q66&psc=1"> Link </a> |
+| HC-SR04 Ultrasonic Sensor | find the distance from an object to change and trigger emotions | $6.99 | <a href="https://www.amazon.com/gp/product/B0B1MJJLJP/ref=ox_sc_act_title_6?smid=A1YZW40LYQY3L1&psc=1"> Link </a> |
+| Mini Breadboard | used to mount button (MODIFICATION) | $5.99 | <a href="https://www.amazon.com/gp/product/B0B827VM95/ref=ox_sc_act_title_5?smid=A1YZW40LYQY3L1&psc=1"> Link </a> |
+| Jumper Wires | Connecting all electrical components | $6.98 | <a href="https://www.amazon.com/gp/product/B01EV70C78/ref=ox_sc_act_title_4?smid=A2WWHQ25ENKVJ1&psc=1"> Link </a> |
+| Push Button | To trigger 8-ball (MODIFICATION) | $7.99 | <a href="https://www.amazon.com/gp/product/B09R47N37H/ref=ox_sc_act_title_3?smid=A14FP9XIRL6C1F&psc=1"> Link </a> |
+| 9g Micro Servos | Eyebrows | $7.99 | <a href="https://www.amazon.com/gp/product/B07MLR1498/ref=ox_sc_act_title_2?smid=A2QTZX14X1D97I&psc=1"> Link </a> |
+| MG995 Servos | Neck tilt and pan | $16.59 | <a href="https://www.amazon.com/gp/product/B0CNVV92ZF/ref=ox_sc_act_title_1?smid=A1PKC2PUMNR8VD&psc=1"> Link </a> |
 
 <!--- # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
@@ -489,5 +489,5 @@ One of the best parts about Github is that you can view how other people set up 
   
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Vogurtime Retro Arcade Kit | Consists of all required domponents to make the arcade | $18.49 | [Link](https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1)
+| Vogurtime Retro Arcade Kit | Consists of all required components to make the arcade | $18.49 | [Link](https://www.amazon.com/dp/B094QRRHC2/ref=twister_B094QYXS9R?_encoding=UTF8&th=1)
 
