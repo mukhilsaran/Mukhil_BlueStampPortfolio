@@ -9,19 +9,19 @@ An emotionally responsive robot that uses artificial facial features like eyebro
 
 <!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](Screenshot 2024-06-13 215404.png)
+![Headstone Image](Screenshot 2024-06-13 215404.png)-->
   
-# Final Milestone
+# Third Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N1vvORsRSO8?si=XvQHQpjjWgKL0zbz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uZ-PfwZgxXo?si=0OI4P5rAvbiRFp-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-For your final milestone, explain the outcome of your project. Key details to include are:
+<!---For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE-->
+
+For my third milestone of the Wall-E robot project, I have finally assembled all of my electrical components into the 3D printed enclosure of the robot. I have mounted the LED matrices, the LCD screen, the ultrasonic sensor, and the servos into thir respective slots. Before mounting on the servos, and attaching the head to the body, I made all the servos go to thir 90 degree positions in order to give ample of space for the parts to move on either side. I then coded the servos to react to all of the emotions. For happy, I made the head tilt upward, for sad and angry I made the head tilt downwards, and for surprised, I made the pan servos move from side to side. While putting the robot together, I faced the problem of one of the LEDs constantly turning off due to the lack of slack in a wire that disconnected often when the sevos made the head move up. For my final modification milestone, I will be adding a magic 8-ball feature that makes the robot nod "yes" or "no" randomly on the press of a button.
 
 
 
@@ -29,7 +29,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cuj8OAAFLn4?si=XxH9Lxcir32arqjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For my second milestone, I have coded the 8x8 matrices to work with the ultrasonic sensor so that the "eyes" display different patterns for "emotions" when objects are placed in different distances from the sensor. The eyes start at a neutral position after a loading animation appears on the matrices and a welcome message on the LCD screen. When an object is placed at a distance {whatever it is}, the led's lights arrange themselves to resemble happy eyes. But as the object gets closer, the eyes change from happy to sad to angry and finally to surprised. This when paired with head movements and eyebrow movements, will allow the robot to portray human emotions accuratley. As rewarding as this milestone was, there were a few challenges when coding the matrices. It was particularly hard to make the expressions on the matrices and orient them properly as I had to map out each LED by using a byte of 1s and 0s tell which LED should be on and off. For my final milestone, I will be coding the srvos to incorporate head movements and eyebrow movements, and I will be assembling the hardware by placing my components into the enclosure and mount my servos to the 3D Printed Body. 
+For my second milestone, I have coded the 8x8 matrices to work with the ultrasonic sensor so that the "eyes" display different patterns for "emotions" when objects are placed in different distances from the sensor. The eyes start at a neutral position after a loading animation appears on the matrices and a welcome message on the LCD screen. When an object is placed at a distance {whatever it is}, the led's lights arrange themselves to resemble happy eyes. But as the object gets closer, the eyes change from happy to sad to angry and finally to surprised. This when paired with head movements and eyebrow movements, will allow the robot to portray human emotions accuratley. As rewarding as this milestone was, there were a few challenges when coding the matrices. It was particularly hard to make the expressions on the matrices and orient them properly as I had to map out each LED by using a byte of 1s and 0s to tell which LED should be on and off. For my final milestone, I will be coding the srvos to incorporate head movements and eyebrow movements, and I will be assembling the hardware by placing my components into the enclosure and mount my servos to the 3D Printed Body. 
 
 <!---For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
 - Technical details of what you've accomplished and how they contribute to the final goal
