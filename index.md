@@ -11,6 +11,11 @@ An emotionally responsive robot that uses artificial facial features like eyebro
 
 ![Headstone Image](Screenshot 2024-06-13 215404.png)-->
   
+# Modification Milestone
+
+For my final milestone, I have added a magic 8-ball feature for the robot. This feature works by the push of a button
+
+
 # Third Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N1vvORsRSO8?si=XvQHQpjjWgKL0zbz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
