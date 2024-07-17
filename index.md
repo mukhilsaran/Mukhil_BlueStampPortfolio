@@ -13,7 +13,9 @@ An emotionally responsive robot that uses artificial facial features like eyebro
   
 # Modification Milestone
 
-For my final milestone, I have added a magic 8-ball feature for the robot. This feature works by the push of a button
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8_OQ_YcMv20?si=h2PMAmn4otqbk9z_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+For my modification, I have added a magic 8-ball feature for the robot. This feature works by the push of a button, which is programmed to make the robot either respond positively by noding up and down, displaying "yes" on the LCD, and displaying check marks on the LED Matrices, or respond negatively by noding left to right, displaying "no" on the screen, and showing cross marks on the LED Matrices. When the button on the back of the robot is pressed, it is instructed to override all its other actions and generate a random value 3 or 4. Denpending on the resulting value the robot either does the required actions for the positive movement
 
 
 # Third Milestone
